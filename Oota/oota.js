@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+function openCity(evt, featureName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -15,9 +15,9 @@ function openCity(evt, cityName) {
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(featureName).style.display = "block";
     evt.currentTarget.className += " active";
-    if(cityName == "Paris"){
+    if(featureName == "Trending"){
     	var display = document.getElementById("display_id");
     	display.innerHTML = "";
     	displayFire();
